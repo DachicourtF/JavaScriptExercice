@@ -1,10 +1,9 @@
-function ModifText(Coucou) {
+function ModifText() {
     
-    alert("Je vais modifier la div");
+    alert("Je vais modifier les divs");
+    let Madiv = document.getElementsByName("MaDiv");
+    Madiv.forEach(div => div.innerHTML = "Hello");
     
 }
 
-ModifText("Hello");
-let LesDivsdiv;
-LesDivsdiv = document.getElementByName('LesDivs');
-LesDivs.innerHTML = "Hello";
+ModifText();
